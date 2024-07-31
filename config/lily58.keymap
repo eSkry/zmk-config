@@ -89,7 +89,7 @@
             bindings = <
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |             |             |             |             |             |             |                             |    PSCRN    |             |             |     INS     |    SLCK     |    PAUSE    |
-        &trans       &none         &none         &none         &none         &none                                     &kp PSCRN       &none         &none         &kp INS      &kp SLCK     &kpPAUSE_BREAK
+        &trans       &none         &none         &none         &none         &none                                     &kp PSCRN       &none         &none         &kp INS      &kp SLCK     &kp PAUSE_BREAK
 
 // |             |             |             |             |             |             |                             |             |             |             |             |             |     HOME    |
         &none        &none         &none         &none         &none         &none                                       &none         &none         &none         &none         &none        &kp HOME
