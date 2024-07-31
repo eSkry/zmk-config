@@ -45,13 +45,13 @@
         &trans       &trans        &trans        &trans        &trans        &trans                                      &trans        &trans        &trans        &trans        &trans       &trans
 
 // |             |      !      |      @      |      #      |      $      |      %      |                             |      <      |      >      |      *      |      (      |      )      |      \      |
-        &none        &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                                   &kp COMMA     &kp DOT       &kp STAR      &kp LPAR      &kp RPAR      &kp BSLH
+        &trans       &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                                   &kp COMMA     &kp DOT       &kp STAR      &kp LPAR      &kp RPAR      &kp BSLH
 
 // |             |             |             |             |             |             |                             |      {      |      }      |      &      |      ^      |             |             |
-        &none        &none         &none         &none         &none         &none                                       &kp LBKT      &kp RBKT      &kp AMPS      &kp CARET     &trans        &trans
+        &trans       &none         &none         &none         &none         &none                                       &kp LBKT      &kp RBKT      &kp AMPS      &kp CARET     &trans        &trans
 
 // |             |             |             |             |             |             |             | |             |      /      |      _      |      +      |      #      |             |             |
-        &trans       &trans        &trans        &trans        &trans        &trans        &trans          &trans        &kp FSLH      &kp MINUS     &kp EQUAL     &kp HASH      &none         &trans
+        &trans       &trans        &trans        &trans        &trans        &trans        &trans          &trans        &kp FSLH      &kp MINUS     &kp EQUAL     &kp HASH      &trans        &trans
 
 //                                           |             |             |             |             | |             |             |             |             |
                                                  &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans
@@ -72,10 +72,10 @@
        &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                                      &none         &none         &kp UP        &none         &none         &trans
 
 // |             |      6      |      7      |      8      |      9      |      0      |                             |             |      <-     |      v      |      ->     |             |             |
-        &none        &none         &none         &none         &none         &none                                       &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none        &none
+        &trans       &none         &none         &none         &none         &none                                       &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none        &none
 
 // |             |             |             |             |             |             |             | |             |      /      |      _      |      +      |      {      |      }      |     '|'     |
-        &none        &none         &none         &none         &none         &none         &trans          &trans        &kp FSLH      &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp NUBS
+        &trans       &none         &none         &none         &none         &none         &trans          &trans        &kp FSLH      &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp NUBS
 
 //                                           |             |             |             |             | |             |             |             |             |
                                                  &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans
@@ -88,20 +88,20 @@
 
             bindings = <
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// |             |             |             |             |             |             |                             |    PSCRN    |             |             |     INS     |    SLCK     |    PAUSE    |
-        &trans       &none         &none         &none         &none         &none                                     &kp PSCRN       &none         &none         &kp INS      &kp SLCK     &kp PAUSE_BREAK
+// |             |      F1     |     F2      |     F3      |     F4      |     F5      |                             |     F6      |      F7     |     F8      |     F9      |     F10     |     F11     |
+       &trans        &kp F1       &kp F2        &kp F3        &kp F4        &kp F5                                      &kp F6         &kp F7       &kp F8        &kp F9        &kp F10       &kp F11     
 
-// |             |             |             |             |             |             |                             |             |             |             |             |             |     HOME    |
-        &none        &none         &none         &none         &none         &none                                       &none         &none         &none         &none         &none        &kp HOME
+// |             |             |             |             |             |             |                             |    PSCRN    |             |    PG_UP    |             |   HOME      |     F12     |
+       &trans       &none         &none         &none         &none         &none                                     &kp PSCRN       &none        &kp PG_UP      &none         &kp HOME      &kp F12
 
-// |      F1     |     F2      |     F3      |     F4      |     F5      |     F6      |                             |     DEL     |    PG_UP    |             |             |             |     END     |
-       &kp F1       &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                      &kp DEL      &kp PG_UP       &none         &none         &none        &kp END
+// |             |             |             |             |             |             |                             |     DEL     |             |    PG_DN    |             |    END      |             |
+       &trans       &none         &none         &none         &none         &none                                      &kp DEL        &none        &kp PG_DN      &none         &kp END       &none
 
-// |      F7     |     F8      |     F9      |     F10     |     F11     |     F12     |             | |             |             |    PG_DN    |             |             |             |             |
-       &kp F7       &kp F8        &kp F9        &kp F10       &kp F11       &kp F12        &trans          &trans        &none       &kp PG_DN       &none         &none         &none         &none
+// |             |             |             |             |             |             |             | |             |             |             |             |             |             |    PAUSE    |
+       &trans       &none         &none         &none         &none         &none         &trans          &trans        &none         &none        &none          &none         &none         &kp PAUSE_BREAK
 
 //                                           |             |             |             |             | |             |             |             |             |
-                                                 &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans
+                                                &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
