@@ -27,11 +27,11 @@
 // |    SHIFT    |      A      |      S      |      D      |      F      |      G      |                              |      H      |      J      |      K      |      L      |      ;      |      '      |
      &kp LSHFT       &kp A         &kp S         &kp D         &kp F         &kp G                                        &kp H         &kp J         &kp K         &kp L         &kp SEMI      &kp SQT
 
-// |    CTRL     |      Z      |      X      |      C      |      V      |      B      |      L3     | |    ENTER     |      N      |      M      |      ,      |      .      |      /      |    SHIFT    |
-     &kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B         &mo 3         &kp RET          &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH    &kp RSHFT
+// |    CTRL     |      Z      |      X      |      C      |      V      |      B      |      L3     | |    {         |      N      |      M      |      ,      |      .      |      /      |    SHIFT    |
+     &kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B         &mo 3         &kp LBKT          &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH    &kp RSHFT
 
-//                                           |     GUI     |     ALT     |     L1      |    SPACE    | |    SPACE     |     L2      |    BSPC     |     GUI     |
-                                                &kp LGUI      &kp LALT        &mo 1      &kp SPACE       &kp SPACE       &mo 2        &kp BSPC       &kp RGUI
+//                                           |     GUI     |     ALT     |     L1      |    SPACE    | |    ENTER     |     L2      |    BSPC     |     GUI     |
+                                                &kp LGUI      &kp LALT        &mo 1      &kp SPACE       &kp RET       &mo 2        &kp BSPC       &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
