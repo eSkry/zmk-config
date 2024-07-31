@@ -68,11 +68,11 @@
 // |             |             |             |             |             |             |                             |             |             |             |             |             |             |
         &trans       &trans        &trans        &trans        &trans        &trans                                      &trans        &trans        &trans        &trans        &trans        &trans
 
-// |      `      |      1      |      2      |      3      |      4      |      5      |                             |      6      |      7      |      8      |      9      |      0      |             |
-        GRAVE        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                                      &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &trans
+// |      `      |      1      |      2      |      3      |      4      |      5      |                             |             |             |      ^      |             |             |             |
+        GRAVE        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                                      &none         &none         &kp UP        &none         &none         &trans
 
-// |             |             |             |             |             |             |                             |             |      <-     |      v      |      ^      |      ->     |             |
-        &none        &none         &none         &none         &none         &none                                       &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none
+// |             |      6      |      7      |      8      |      9      |      0      |                             |             |      <-     |      v      |      ->     |             |             |
+        &none        &none         &none         &none         &none         &none                                       &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none        &none
 
 // |             |             |             |             |             |             |             | |             |      /      |      _      |      +      |      {      |      }      |     '|'     |
         &none        &none         &none         &none         &none         &none         &trans          &trans        &kp FSLH      &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp NUBS
