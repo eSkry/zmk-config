@@ -45,7 +45,7 @@
         &trans       &trans        &trans        &trans        &trans        &trans                                      &trans        &trans        &trans        &trans        &trans        &trans
 
 // |             |             |             |             |             |             |                             |    '|'      |      &      |      *      |      (      |      )      |             |
-        &trans       &none         &none         &none         &none         &none                                      &kp NUBS       &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &trans
+        &trans       &none         &none         &none         &none         &none                                      &kp BSLH       &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &trans
 
 // |             |             |             |             |             |             |                             |      {      |      }      |      #      |      ^      |             |             |
         &trans       &none         &none         &none         &none         &none                                       &kp LBKT      &kp RBKT      &kp HASH      &kp CARET     &trans        &trans
