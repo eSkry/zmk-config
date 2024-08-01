@@ -42,16 +42,16 @@
             bindings = <
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |             |             |             |             |             |             |                             |             |             |             |             |             |             |
-        &trans       &trans        &trans        &trans        &trans        &trans                                      &trans        &trans        &trans        &trans        &trans       &trans
+        &trans       &trans        &trans        &trans        &trans        &trans                                      &trans        &trans        &trans        &trans        &trans        &trans
 
-// |             |      !      |      @      |      #      |      $      |      %      |                             |      <      |      >      |      *      |      (      |      )      |      \      |
-        &trans       &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                                   &kp COMMA     &kp DOT       &kp STAR      &kp LPAR      &kp RPAR      &kp BSLH
+// |             |             |             |             |             |             |                             |    '|'      |      &      |      *      |      (      |      )      |             |
+        &trans       &none         &none         &none         &none         &none                                      &kp NUBS       &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &trans
 
-// |             |             |             |             |             |             |                             |      {      |      }      |      &      |      ^      |             |             |
-        &trans       &none         &none         &none         &none         &none                                       &kp LBKT      &kp RBKT      &kp AMPS      &kp CARET     &trans        &trans
+// |             |             |             |             |             |             |                             |      {      |      }      |      #      |      ^      |             |             |
+        &trans       &none         &none         &none         &none         &none                                       &kp LBKT      &kp RBKT      &kp HASH      &kp CARET     &trans        &trans
 
-// |             |             |             |             |             |             |             | |             |      /      |      _      |      +      |      #      |             |             |
-        &trans       &trans        &trans        &trans        &trans        &trans        &trans          &trans        &kp FSLH      &kp MINUS     &kp EQUAL     &kp HASH      &trans        &trans
+// |             |             |             |             |             |             |             | |             |      /      |      =      |             |             |             |             |
+        &trans       &none         &none         &none         &none         &none         &trans          &trans        &kp FSLH      &kp EQUAL     &trans        &trans        &trans        &trans
 
 //                                           |             |             |             |             | |             |             |             |             |
                                                  &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans
@@ -68,14 +68,14 @@
 // |             |             |             |             |             |             |                             |             |             |             |             |             |             |
         &trans       &trans        &trans        &trans        &trans        &trans                                      &trans        &trans        &trans        &trans        &trans        &trans
 
-// |      `      |      1      |      2      |      3      |      4      |      5      |                             |             |             |      ^      |             |             |             |
-       &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                                      &none         &none         &kp UP        &none         &none         &trans
+// |      `      |             |             |             |             |             |                             |             |             |      ^      |             |             |             |
+       &kp GRAVE     &none         &none         &none         &none         &none                                       &none         &none         &kp UP        &none         &none         &trans
 
-// |             |      6      |      7      |      8      |      9      |      0      |                             |             |      <-     |      v      |      ->     |             |             |
-        &trans       &none         &none         &none         &none         &none                                       &none         &kp LEFT      &kp DOWN      &kp RIGHT     &none        &none
+// |             |             |             |             |             |             |                             |             |      <-     |      v      |      ->     |             |             |
+        &trans       &none         &none         &none         &none         &none                                       &none         &kp LEFT      &kp DOWN      &kp RIGHT     &trans        &trans
 
-// |             |             |             |             |             |             |             | |             |      /      |      _      |      +      |      {      |      }      |     '|'     |
-        &trans       &none         &none         &none         &none         &none         &trans          &trans        &kp FSLH      &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp NUBS
+// |             |             |             |             |             |             |             | |             |      /      |      +      |             |             |             |             |
+        &trans       &none         &none         &none         &none         &none         &trans          &trans        &kp FSLH      &kp EQUAL     &trans         &trans       &trans        &trans
 
 //                                           |             |             |             |             | |             |             |             |             |
                                                  &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans
