@@ -44,11 +44,11 @@
 // |             |             |             |             |             |             |                             |             |             |             |             |             |             |
         &trans       &trans        &trans        &trans        &trans        &trans                                      &trans        &trans        &trans        &trans        &trans        &trans
 
-// |             |             |             |             |             |             |                             |    '|'      |      &      |      *      |      (      |      )      |             |
-        &trans       &none         &none         &none         &none         &none                                      &kp BSLH       &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &trans
+// |             |             |      ^      |             |             |             |                             |    '|'      |      &      |      *      |      (      |      )      |             |
+        &trans       &none         &kp UP        &none         &none         &none                                      &kp BSLH       &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &trans
 
-// |             |             |             |             |             |             |                             |      {      |      }      |      #      |      ^      |             |             |
-        &trans       &none         &none         &none         &none         &none                                       &kp LBKT      &kp RBKT      &kp HASH      &kp CARET     &trans        &trans
+// |             |     <-      |      v      |     ->      |             |             |                             |      {      |      }      |      #      |      ^      |             |             |
+        &trans      &kp LEFT       &kp DOWN     &kp RIGHT     &none         &none                                       &kp LBKT      &kp RBKT      &kp HASH      &kp CARET     &trans        &trans
 
 // |             |             |             |             |             |             |             | |             |      /      |      =      |             |             |             |             |
         &trans       &none         &none         &none         &none         &none         &trans          &trans        &kp FSLH      &kp EQUAL     &trans        &trans        &trans        &trans
